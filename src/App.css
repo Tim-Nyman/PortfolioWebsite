@@ -1,0 +1,28 @@
+/* Global */
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+/* Global */
+  html::-webkit-scrollbar, body::-webkit-scrollbar {
+    display: none;
+  }
+
+/* Global */
+.scrollspy-example {
+    position: relative;
+    overflow-y: auto;
+}
+
+/* Global */
+.section-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
