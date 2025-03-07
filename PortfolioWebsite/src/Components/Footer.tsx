@@ -1,14 +1,15 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
+import "../Styles/footer.css";
 
 const Footer: React.FC = () => {
     return (
         <footer className = "bg-dark py-2 text-white footer-shadow">
-            <Container>
+            <Container className="footer-container">
                 <Row>
-                    <h3 className=''>
-                        Hej
-                    </h3>
+                    <p className="footer-text">
+                        Website made by Tim using React+Boostrap, TypeScript, and VITE.
+                    </p>
                 </Row>
             </Container>
         </footer>

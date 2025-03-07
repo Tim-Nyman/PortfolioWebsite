@@ -1,7 +1,8 @@
-import { useEffect, useState } from 'react';
-import { Container, Row, Col, Button, Tab, ListGroup, TabContent, Nav, Card } from 'react-bootstrap';
+import { useState } from 'react';
+import { Container, Row, Col, Button, Tab, ListGroup, TabContent, Card } from 'react-bootstrap';
 import Image from 'react-bootstrap/Image'
 import AnimatedProgressBar from './AnimatedProgressBar';
+import "../Styles/Section.css"
 
 
 function Example() {
@@ -16,6 +17,7 @@ function Example() {
 
   return (
     <>
+      {/* Hero section */}
       <div className="scroll-container">
         <section id="start" className="dark-section">
           <Container>
@@ -38,9 +40,10 @@ function Example() {
           </Container>
         </section>
 
+        {/* Skill tabs */}
         <section id="skills" className="dark-section">
           <Container>
-            <Tab.Container id="list-group-skills" activeKey={activeTab} onSelect={handleTabSelect}    >
+            <Tab.Container id="list-group-skills" activeKey={activeTab} onSelect={handleTabSelect}>
               <Row>
                 <Col sm={4} className="col-custom">
                   <ListGroup>
@@ -62,73 +65,124 @@ function Example() {
                   </ListGroup>
                 </Col>
 
+                {/* Backend */}
                 <Col sm={8} className="col-custom">
                   <TabContent className="custom-pane">
                     <Tab.Pane eventKey="#Backend">
                       <Image src="Images/Logos/CSharp.png" className="pane-image-backend"></Image>
-                      <AnimatedProgressBar now={70} />
+                      <div className="progress-container">
+                        <p className="text-left">Novice</p>
+                        <AnimatedProgressBar now={70} />
+                        <p className="text-right">Advanced</p>
+                      </div>
                     </Tab.Pane>
 
                     <Tab.Pane eventKey="#Backend">
                       <Image src="Images/Logos/dot-net-core.png" className="pane-image-backend"></Image>
-                      <AnimatedProgressBar now={54} />
+                      <div className="progress-container">
+                        <p className="text-left">Novice</p>
+                        <AnimatedProgressBar now={54} />
+                        <p className="text-right">Advanced</p>
+                      </div>
                     </Tab.Pane>
 
                     <Tab.Pane eventKey="#Backend">
                       <Image src="Images/Logos/asp.png" className="pane-image-backend"></Image>
-                      <AnimatedProgressBar now={24} />
+                      <div className="progress-container">
+                        <p className="text-left">Novice</p>
+                        <AnimatedProgressBar now={24} />
+                        <p className="text-right">Advanced</p>
+                      </div>
                     </Tab.Pane>
                   </TabContent>
 
+                  {/* Frontend */}
                   <Tab.Content className="custom-pane">
                     <Tab.Pane eventKey="#Frontend">
                       <Image src="Images/Logos/React.png" className="pane-image"></Image>
-                      <AnimatedProgressBar now={65} />
+                      <div className="progress-container">
+                        <p className="text-left">Novice</p>
+                        <AnimatedProgressBar now={65} />
+                        <p className="text-right">Advanced</p>
+                      </div>
                     </Tab.Pane>
 
                     <Tab.Pane eventKey="#Frontend">
                       <Image src="Images/Logos/TypeScript.png" className="pane-image"></Image>
-                      <AnimatedProgressBar now={50} />
+                      <div className="progress-container">
+                        <p className="text-left">Novice</p>
+                        <AnimatedProgressBar now={50} />
+                        <p className="text-right">Advanced</p>
+                      </div>
                     </Tab.Pane>
 
                     <Tab.Pane eventKey="#Frontend">
                       <Image src="Images/Logos/JavaScriptFinal.png" className="pane-image"></Image>
-                      <AnimatedProgressBar now={50} />
+                      <div className="progress-container">
+                        <p className="text-left">Novice</p>
+                        <AnimatedProgressBar now={50} />
+                        <p className="text-right">Advanced</p>
+                      </div>
                     </Tab.Pane>
 
                     <Tab.Pane eventKey="#Frontend">
                       <Image src="Images/Logos/Bootstrap2.png" className="pane-image"></Image>
-                      <AnimatedProgressBar now={60} />
+                      <div className="progress-container">
+                        <p className="text-left">Novice</p>
+                        <AnimatedProgressBar now={60} />
+                        <p className="text-right">Advanced</p>
+                      </div>
                     </Tab.Pane>
                   </Tab.Content>
 
-
+                  {/* Database */}
                   <TabContent className="custom-pane">
                     <Tab.Pane eventKey="#Database">
                       <Image src="Images/Logos/azure.png" className="pane-image-sql"></Image>
-                      <AnimatedProgressBar now={24} />
+                      <div className="progress-container">
+                        <p className="text-left">Novice</p>
+                        <AnimatedProgressBar now={24} />
+                        <p className="text-right">Advanced</p>
+                      </div>
                     </Tab.Pane>
 
                     <Tab.Pane eventKey="#Database">
                       <Image src="Images/Logos/MSSQL.png" className="pane-image-sql"></Image>
-                      <AnimatedProgressBar now={70} />
+                      <div className="progress-container">
+                        <p className="text-left">Novice</p>
+                        <AnimatedProgressBar now={70} />
+                        <p className="text-right">Advanced</p>
+                      </div>
                     </Tab.Pane>
                   </TabContent>
 
+                  {/* Cloud and Tools */}
                   <TabContent className="custom-pane">
                     <Tab.Pane eventKey="#Cloud">
                       <Image src="Images/Logos/Microsoft_Azure_Logo.png" className="pane-image-cloud"></Image>
-                      <AnimatedProgressBar now={34} />
+                      <div className="progress-container">
+                        <p className="text-left">Novice</p>
+                        <AnimatedProgressBar now={34} />
+                        <p className="text-right">Advanced</p>
+                      </div>
                     </Tab.Pane>
 
                     <Tab.Pane eventKey="#Cloud">
                       <Image src="Images/Logos/Azure DevOps.png" className="pane-image-cloud"></Image>
-                      <AnimatedProgressBar now={18} />
+                      <div className="progress-container">
+                        <p className="text-left">Novice</p>
+                        <AnimatedProgressBar now={18} />
+                        <p className="text-right">Advanced</p>
+                      </div>
                     </Tab.Pane>
 
                     <Tab.Pane eventKey="#Cloud">
                       <Image src="Images/Logos/GitHub.png" className="pane-image-cloud"></Image>
-                      <AnimatedProgressBar now={60} />
+                      <div className="progress-container">
+                        <p className="text-left">Novice</p>
+                        <AnimatedProgressBar now={60} />
+                        <p className="text-right">Advanced</p>
+                      </div>
                     </Tab.Pane>
                   </TabContent>
                 </Col>
@@ -137,33 +191,32 @@ function Example() {
           </Container>
         </section>
 
+        {/* Portfolio Cards */}
         <section id="portfolio" className="dark-section">
           <Container>
             <Col className="col-custom">
               <Row>
-                <Card style={{ width: '18rem' }}>
-                  <Card.Img variant="top" src="Images/Profile/Profile Picture.png" />
+                <Card className="card-styling">
+                  <Card.Img variant="top" src="Images/Cards/PortfolioWebsiteCardPicture.png" className="card-image" />
                   <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
+                    <Card.Title>Portfolio Website</Card.Title>
                     <Card.Text>
-                      Some quick example text to build on the card title and make up the
-                      bulk of the card's content.
+                      My code for this website, built primarly on React+Bootstrap, TypeScript and VITE.
                     </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+                    <Button onClick={() => window.open("https://github.com/Tim-Nyman/PortfolioWebsite", '_blank')} variant="dark" className="card-button">GitHub</Button>
                   </Card.Body>
                 </Card>
               </Row>
 
               <Row>
-                <Card style={{ width: '18rem' }}>
-                  <Card.Img variant="top" src="Images/Profile/Profile Picture.png" />
+                <Card className="card-styling">
+                  <Card.Img variant="top" src="Images/Cards/OOADBowling.png" className="card-image" />
                   <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
+                    <Card.Title>OOAD Project</Card.Title>
                     <Card.Text>
-                      Some quick example text to build on the card title and make up the
-                      bulk of the card's content.
+                      OOAD Project with focus on building using design patterns and following the SOLID-principles.
                     </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+                    <Button onClick={() => window.open("https://github.com/Tim-Nyman/OOAD-Project", '_blank')} variant="dark" className="card-button">GitHub</Button>
                   </Card.Body>
                 </Card>
               </Row>
