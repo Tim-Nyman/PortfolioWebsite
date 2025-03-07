@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Navbar, Container, Nav, Col, Row, Button, Offcanvas } from 'react-bootstrap';
+import { Navbar, Container, Nav, Col, Row, Button} from 'react-bootstrap';
 import Image from 'react-bootstrap/Image'
 import "../Styles/Header.css"
 import OffCanvas from './OffCanvas';
