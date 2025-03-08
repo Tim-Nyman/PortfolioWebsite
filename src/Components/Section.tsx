@@ -23,7 +23,7 @@ function Example() {
           <Container>
             <Row>
               <Col>
-                <Image src="Images/Profile/Profile Picture.png" className="rounded-circle" alt="Tim's Portrait" />
+                <Image src="Images/Profile/Profile_Picture.png" className="rounded-circle" alt="Tim's Portrait" />
               </Col>
 
               <Col className="section-col">
@@ -32,7 +32,7 @@ function Example() {
                 <p>
                   .NET & C# Student - Always learning, Always improving.
                 </p>
-                <Button onClick={() => window.open('CV Tim 2025.pdf', '_blank')} variant="primary outline-secondary" className="button-section">
+                <Button onClick={() => window.open('CV_Tim_2025.pdf', '_blank')} variant="primary outline-secondary" className="button-section">
                   Resume
                 </Button>
               </Col>
@@ -81,7 +81,7 @@ function Example() {
                       <Image src="Images/Logos/dot-net-core.png" className="pane-image-backend"></Image>
                       <div className="progress-container">
                         <p className="text-left">Novice</p>
-                        <AnimatedProgressBar now={54} />
+                        <AnimatedProgressBar now={65} />
                         <p className="text-right">Advanced</p>
                       </div>
                     </Tab.Pane>
@@ -90,7 +90,7 @@ function Example() {
                       <Image src="Images/Logos/asp.png" className="pane-image-backend"></Image>
                       <div className="progress-container">
                         <p className="text-left">Novice</p>
-                        <AnimatedProgressBar now={24} />
+                        <AnimatedProgressBar now={60} />
                         <p className="text-right">Advanced</p>
                       </div>
                     </Tab.Pane>
@@ -141,7 +141,7 @@ function Example() {
                       <Image src="Images/Logos/azure.png" className="pane-image-sql"></Image>
                       <div className="progress-container">
                         <p className="text-left">Novice</p>
-                        <AnimatedProgressBar now={24} />
+                        <AnimatedProgressBar now={65} />
                         <p className="text-right">Advanced</p>
                       </div>
                     </Tab.Pane>
@@ -162,16 +162,16 @@ function Example() {
                       <Image src="Images/Logos/Microsoft_Azure_Logo.png" className="pane-image-cloud"></Image>
                       <div className="progress-container">
                         <p className="text-left">Novice</p>
-                        <AnimatedProgressBar now={34} />
+                        <AnimatedProgressBar now={47} />
                         <p className="text-right">Advanced</p>
                       </div>
                     </Tab.Pane>
 
                     <Tab.Pane eventKey="#Cloud">
-                      <Image src="Images/Logos/Azure DevOps.png" className="pane-image-cloud"></Image>
+                      <Image src="Images/Logos/Azure_DevOps.png" className="pane-image-cloud"></Image>
                       <div className="progress-container">
                         <p className="text-left">Novice</p>
-                        <AnimatedProgressBar now={18} />
+                        <AnimatedProgressBar now={54} />
                         <p className="text-right">Advanced</p>
                       </div>
                     </Tab.Pane>
@@ -180,7 +180,7 @@ function Example() {
                       <Image src="Images/Logos/GitHub.png" className="pane-image-cloud"></Image>
                       <div className="progress-container">
                         <p className="text-left">Novice</p>
-                        <AnimatedProgressBar now={60} />
+                        <AnimatedProgressBar now={72} />
                         <p className="text-right">Advanced</p>
                       </div>
                     </Tab.Pane>
