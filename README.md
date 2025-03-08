@@ -36,7 +36,8 @@ To get a local copy of this project up and running, follow these steps:
 
     ```bash
     npm install
-    ```   
+    ```
+    Using React+TypeScript and React+Bootstrap
 
 ### Running the Project
 
