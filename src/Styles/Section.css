@@ -5,6 +5,7 @@
     scrollbar-width: none;
     -ms-overflow-style: none;
     overflow-y: scroll;
+    overflow-x: scroll;
 }
 
 .scroll-container::-webkit-scrollbar {
@@ -14,15 +15,20 @@
 
 /* Design & Layout for all sections */
 .dark-section {
-    scroll-snap-align: start;
-    height: 100vh;
-    background-color: #212529;
-    color: white;
+    min-height: 100vh !important;
+    max-height: 100vh !important;
+    overflow: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 50px;
+    scroll-snap-align: start;
+    background-color: #212529;
+    color: white;
+}
+
+.custom-padding {
+    margin-bottom: 50px;
 }
 
 .col-custom {
@@ -30,6 +36,7 @@
     justify-content: center !important;
     align-items: center !important;
 }
+
 
 /* List item (skills) and Tabs */
 .custom-list-item {
@@ -39,26 +46,20 @@
     border: #8f8f8f !important;
     border-radius: 15px !important;
     background-color: #8f8f8f !important;
-    margin-top: 10px !important;
+    margin: 10px 0 !important;
+}
+
+.col-custom-list {
+    width: 250px !important;
+    min-width: 250px !important;
+    max-width: 250px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .custom-list-item:hover {
     background-color: #3f3f3f !important;
-}
-
-.custom-pane {
-    margin-bottom: 50px;
-}
-
-
-.custom-progressbar {
-    width: 400px !important;
-}
-
-.custom-progressbar-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .pane-image {
@@ -89,36 +90,59 @@
     padding: 5px 0;
 }
 
-.col-custom {
+/* Cards */
+.card-styling {
+    max-height: 450px;
+    max-width: 220px;
+    width: 100% !important;
+    height: 100% !important;
+    background-color: #615c5c !important;
+    border-color: #8f8f8f !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    height: 100%; 
+}
+
+.col-custom-cards {
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
 }
 
-/* Cards */
-.card-styling {
-    width: 250px !important;
-    height: 450px !important;
-    margin-right: 100px !important;
-    background-color: #615c5c !important;
-    border-color: #8f8f8f !important;
-}
-
 .card-image {
     height: 50%;
+    object-fit: cover;
 }
 
 .card-button {
-    align-items: center !important;
-    justify-content: center !important;
+    align-self: center !important;
     margin-top: auto !important;
 }
 
-/* Progress bar text */
+/* Progress bar */
+
+.custom-progressbar {
+    width: 100%;
+}
+
+.custom-progressbar-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .progress-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 }
 
 .text-left {
