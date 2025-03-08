@@ -25,6 +25,7 @@
     scroll-snap-align: start;
     background-color: #212529;
     color: white;
+    padding-top: 100px;
 }
 
 .custom-padding {
