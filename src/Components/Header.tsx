@@ -11,18 +11,13 @@ const Header: React.FC = () => {
 
     const handleShow = () => setShowOffcanvas(true);
     const handleClose = () => setShowOffcanvas(false);
-
-
+    
     useEffect(() => {
         document.body.setAttribute("data-bs-spy", "scroll");
         document.body.setAttribute("data-bs-target", "#navbar-nav");
         document.body.setAttribute("data-bs-offset", "50");
         document.body.classList.add("scrollspy-example");
     }, []);
-
-
-
-
 
     return (
         <header>

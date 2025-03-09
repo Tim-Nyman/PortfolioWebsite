@@ -31,7 +31,7 @@ function Example() {
                 <p>
                   .NET & C# Student - Always learning, Always improving.
                 </p>
-                <Button onClick={() => window.open('CV_Tim_2025.pdf', '_blank')} variant="primary outline-secondary" className="button-section">
+                <Button href="CV_Tim_2025.pdf" target="blank" variant="primary outline-secondary" className="button-section">
                   Resume
                 </Button>
               </Col>
