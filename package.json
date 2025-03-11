@@ -2,7 +2,7 @@
   "name": "portfoliowebsite",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://tim-nyman.github.io",
+  "homepage": "https://tim-nyman.github.io/PortfolioWebsite",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
