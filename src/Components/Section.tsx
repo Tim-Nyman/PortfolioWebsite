@@ -1,31 +1,22 @@
-import { useState } from 'react';
-import { Container, Row, Col, Button, Tab, ListGroup, TabContent, Card } from 'react-bootstrap';
+import { Container, Row, Col, Button } from 'react-bootstrap';
 import Image from 'react-bootstrap/Image'
-import AnimatedProgressBar from './AnimatedProgressBar';
 import "../Styles/Section.css"
+import SectionHeader from "./SectionHeaders/SectionHeader";
 
 
 function Example() {
-
-  const [activeTab, setActiveTab] = useState<string>('#Backend');
-
-  const handleTabSelect = (selectedKey: string | null) => {
-    if (selectedKey) {
-      setActiveTab(selectedKey);
-    }
-  };
 
   return (
     <>
       {/* Hero section */}
       <div className="scroll-container">
-        <section id="start" className="dark-section">
-          <Container fluid="xl">
+        <section id="start" className="section-design">
+          <Container>
             <Row>
-              <Col lg={true}>
+              <Col lg={6}>
                 <Image src="Images/Profile/Profile_Picture.png" className="rounded-circle" alt="Tim's Portrait" fluid />
               </Col>
-              <Col className="section-col my-3">
+              <Col className="section-col my-3 text-design">
                 <h2>Hi! I am Tim,</h2>
                 <h2>a C# & .NET developer in the making</h2>
                 <p>
@@ -40,197 +31,89 @@ function Example() {
         </section>
 
         {/* Skill tabs */}
-        <section id="skills" className="dark-section">
-          <Container fluid>
-            <Row className="justify-content-center">
-              <Tab.Container id="list-group-skills" activeKey={activeTab} onSelect={handleTabSelect}>
-                <Col md={6} className="col-custom-list ">
-                  <Container>
-                    <ListGroup>
-                      <ListGroup.Item action href="#Backend" className="custom-list-item">
-                        Backend
-                      </ListGroup.Item>
+        <section id="skills" className="section-design">
+          <Container>
+            <Row>
+              <SectionHeader selectedSectionName="SKILLS" />
 
-                      <ListGroup.Item action href="#Frontend" className="custom-list-item">
-                        Frontend
-                      </ListGroup.Item>
-
-                      <ListGroup.Item action href="#Database" className="custom-list-item">
-                        Database
-                      </ListGroup.Item>
-
-                      <ListGroup.Item action href="#Cloud" className="custom-list-item">
-                        Cloud and Tools
-                      </ListGroup.Item>
-                    </ListGroup>
-                  </Container>
+              <Row className="text-start justify-content-center">
+                <Col lg={7}>
+                  <p className="text-design p-text my-lg-2">
+                    I excel at breaking down complex problems into smaller, more manageable tasks, making my code
+                    more maintainable and readable. I am driven by challenges and I'm always striving to improve
+                    and continuously seek opportunities to enhance my skills. My open-mindedness allows me to quickly grasp
+                    and adapt to new technologies.
+                  </p>
                 </Col>
 
-                <Col md={4} className="col-custom custom-padding">
-                  <Container>
-                    {/* Backend */}
-                    <TabContent>
-                      <Tab.Pane eventKey="#Backend">
-                        <Image src="Images/Logos/CSharp.png" className="pane-image-backend" fluid></Image>
-                        <div className="progress-container">
-                          <p className="text-left">Novice</p>
-                          <AnimatedProgressBar now={70} />
-                          <p className="text-right">Advanced</p>
-                        </div>
-                      </Tab.Pane>
+                <Col lg={1}></Col>
 
-                      <Tab.Pane eventKey="#Backend">
-                        <Image src="Images/Logos/dot-net-core.png" className="pane-image-backend" fluid></Image>
-                        <div className="progress-container">
-                          <p className="text-left">Novice</p>
-                          <AnimatedProgressBar now={65} />
-                          <p className="text-right">Advanced</p>
-                        </div>
-                      </Tab.Pane>
-
-                      <Tab.Pane eventKey="#Backend">
-                        <Image src="Images/Logos/asp.png" className="pane-image-backend" fluid></Image>
-                        <div className="progress-container">
-                          <p className="text-left">Novice</p>
-                          <AnimatedProgressBar now={60} />
-                          <p className="text-right">Advanced</p>
-                        </div>
-                      </Tab.Pane>
-                    </TabContent>
-
-                    {/* Frontend */}
-                    <Tab.Content>
-                      <Tab.Pane eventKey="#Frontend">
-                        <Image src="Images/Logos/React.png" className="pane-image" fluid></Image>
-                        <div className="progress-container">
-                          <p className="text-left">Novice</p>
-                          <AnimatedProgressBar now={65} />
-                          <p className="text-right">Advanced</p>
-                        </div>
-                      </Tab.Pane>
-
-                      <Tab.Pane eventKey="#Frontend">
-                        <Image src="Images/Logos/TypeScript.png" className="pane-image" fluid></Image>
-                        <div className="progress-container">
-                          <p className="text-left">Novice</p>
-                          <AnimatedProgressBar now={50} />
-                          <p className="text-right">Advanced</p>
-                        </div>
-                      </Tab.Pane>
-
-                      <Tab.Pane eventKey="#Frontend">
-                        <Image src="Images/Logos/JavaScriptFinal.png" className="pane-image" fluid></Image>
-                        <div className="progress-container">
-                          <p className="text-left">Novice</p>
-                          <AnimatedProgressBar now={50} />
-                          <p className="text-right">Advanced</p>
-                        </div>
-                      </Tab.Pane>
-
-                      <Tab.Pane eventKey="#Frontend">
-                        <Image src="Images/Logos/Bootstrap2.png" className="pane-image" fluid></Image>
-                        <div className="progress-container">
-                          <p className="text-left">Novice</p>
-                          <AnimatedProgressBar now={60} />
-                          <p className="text-right">Advanced</p>
-                        </div>
-                      </Tab.Pane>
-                    </Tab.Content>
-
-                    {/* Database */}
-                    <TabContent>
-                      <Tab.Pane eventKey="#Database">
-                        <Image src="Images/Logos/azure.png" className="pane-image-sql"></Image>
-                        <div className="progress-container">
-                          <p className="text-left">Novice</p>
-                          <AnimatedProgressBar now={65} />
-                          <p className="text-right">Advanced</p>
-                        </div>
-                      </Tab.Pane>
-
-                      <Tab.Pane eventKey="#Database">
-                        <Image src="Images/Logos/MSSQL.png" className="pane-image-sql"></Image>
-                        <div className="progress-container">
-                          <p className="text-left">Novice</p>
-                          <AnimatedProgressBar now={70} />
-                          <p className="text-right">Advanced</p>
-                        </div>
-                      </Tab.Pane>
-                    </TabContent>
-
-                    {/* Cloud and Tools */}
-                    <TabContent>
-                      <Tab.Pane eventKey="#Cloud">
-                        <Image src="Images/Logos/Microsoft_Azure_Logo.png" className="pane-image-cloud"></Image>
-                        <div className="progress-container">
-                          <p className="text-left">Novice</p>
-                          <AnimatedProgressBar now={47} />
-                          <p className="text-right">Advanced</p>
-                        </div>
-                      </Tab.Pane>
-
-                      <Tab.Pane eventKey="#Cloud">
-                        <Image src="Images/Logos/Azure_DevOps.png" className="pane-image-cloud"></Image>
-                        <div className="progress-container">
-                          <p className="text-left">Novice</p>
-                          <AnimatedProgressBar now={54} />
-                          <p className="text-right">Advanced</p>
-                        </div>
-                      </Tab.Pane>
-
-                      <Tab.Pane eventKey="#Cloud">
-                        <Image src="Images/Logos/GitHub.png" className="pane-image-cloud"></Image>
-                        <div className="progress-container">
-                          <p className="text-left">Novice</p>
-                          <AnimatedProgressBar now={72} />
-                          <p className="text-right">Advanced</p>
-                        </div>
-                      </Tab.Pane>
-
-                    </TabContent>
-                  </Container>
+                <Col className="d-flex flex-wrap justify-content-center lg-p-3 sm-pt-2" lg={4} xs={12}>
+                  <Image src="Images/Logos/Logo_C_sharp.svg" className="image-size image-tranform" fluid></Image>
+                  <Image src="Images/Logos/dotnet-logo.svg" className="image-size image-tranform" fluid></Image>
+                  <Image src="Images/Logos/aspnet.svg" className="image-size image-tranform" fluid></Image>
+                  <Image src="Images/Logos/React-icon.svg" className="image-size image-tranform" fluid></Image>
+                  <Image src="Images/Logos/Typescript_logo.svg" className="image-size image-tranform" fluid></Image>
+                  <Image src="Images/Logos/JavaScript_logo.svg" className="image-size image-tranform" fluid></Image>
+                  <Image src="Images/Logos/Bootstrap_logo.svg" className="image-size image-tranform" fluid></Image>
+                  <Image src="Images/Logos/Azure_sql.svg" className="image-size image-tranform" fluid></Image>
+                  <Image src="Images/Logos/azure_icon.svg" className="image-size image-tranform" fluid></Image>
+                  <Image src="Images/Logos/Azure-DevOps.svg" className="image-size image-tranform" fluid></Image>
+                  <Image src="Images/Logos/github-icon-1-logo-svgrepo-com.svg" className="image-size image-tranform" fluid></Image>
                 </Col>
-              </Tab.Container>
+              </Row>
+
+              <Row>
+                <h1 className="text-start h1-bracket">{"}"}</h1>
+              </Row>
             </Row>
           </Container>
         </section>
 
         {/* Portfolio Cards */}
-        <section id="portfolio" className="dark-section">
-          <Container>
-            <Row>
-              <Col className="col-custom-cards">
-                <Card className="card-styling">
-                  <Card.Img variant="top" src="Images/Cards/PortfolioWebsiteCardPicture.png" className="card-image" />
-                  <Card.Body>
-                    <Card.Title>Portfolio Website</Card.Title>
-                    <Card.Text>
-                      My code for this website, built primarly on React+Bootstrap, TypeScript and VITE.
-                    </Card.Text>
-                    <Button href="https://github.com/Tim-Nyman/PortfolioWebsite" target="_blank" variant="dark" className="card-button">GitHub</Button>
-                  </Card.Body>
-                </Card>
-              </Col>
+        <section id="projects" className="section-design">
+          <Container fluid>
+            <Container>
+              <Row className="pb-lg-4">
+                <SectionHeader selectedSectionName="PROJECTS" />
+              </Row>
 
-              <Col className="col-custom-cards">
-                <Card className="card-styling">
-                  <Card.Img variant="top" src="Images/Cards/OOADBowling.png" className="card-image" />
-                  <Card.Body>
-                    <Card.Title>OOAD Project</Card.Title>
-                    <Card.Text>
-                      Building using design patterns and following the SOLID-principles.
-                    </Card.Text>
-                    <Button href="https://github.com/Tim-Nyman/OOAD-Project" target="_blank" variant="dark" className="card-button">GitHub</Button>
-                  </Card.Body>
-                </Card>
-              </Col>
+              <Row className="card-row">
+                <Col lg={5} className="card-container">
+                  <a href="https://github.com/Tim-Nyman/PortfolioWebsite" target="_blank" className="card-design">
+                    <Image src="Images/Cards/PortfolioWebsitePicture.png" className="card-design-image" fluid></Image>
+                  </a>
+                  <h1 className="text-design-card-h1 resize-text pt-lg-5">
+                    Portfolio
+                  </h1>
+                  <p className="card-text text-design remove-text">
+                    This website is built using TypeScript, React and Bootstrap as a learning opportunity.
+                  </p>
+                </Col>
 
-            </Row>
+                <Col lg={5} className="card-container">
+                  <a href="https://github.com/Tim-Nyman/OOAD-Project" target="_blank" className="card-design">
+                    <Image src="Images/Logos/solid-logotype.png" className="card-design-image" fluid></Image>
+                  </a>
+                  <h1 className="text-design-card-h1 resize-text pt-lg-5">
+                    OOAD App
+                  </h1>
+                  <p className="card-text text-design remove-text">
+                    Console application where the focus was on OOAD and following design patterns.
+                  </p>
+                </Col>
+              </Row>
+
+              <Row>
+                <Col lg={12} className="text-start text-design-h1">
+                  <h1 className="h1-bracket">{"}"}</h1>
+                </Col>
+              </Row>
+            </Container>
           </Container>
         </section >
       </div>
     </>
   );
 }
-
 export default Example;

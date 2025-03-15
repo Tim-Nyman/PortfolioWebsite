@@ -45,9 +45,9 @@ const Header: React.FC = () => {
                             <Nav className="ms-auto">
                                 <Nav.Link href="#start">0. Start</Nav.Link>
                                 <Nav.Link href="#skills">1. Skills</Nav.Link>
-                                <Nav.Link href="#portfolio">2. Portfolio</Nav.Link>
+                                <Nav.Link href="#projects">2. Projects</Nav.Link>
                                 <Nav.Link href="#contact" onClick={handleShow}>3. Contact</Nav.Link>
-                                <Nav.Link href="/PortfolioWebsite/CV_Tim_2025.pdf" target="_blank">4. Resume</Nav.Link>
+                                <Nav.Link href="/CV_Tim_2025.pdf" target="_blank">4. Resume</Nav.Link>
                             </Nav>
                         </Navbar.Collapse>
                     </Container>
