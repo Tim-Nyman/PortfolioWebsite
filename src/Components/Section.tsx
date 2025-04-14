@@ -79,29 +79,43 @@ function Example() {
               </Row>
 
               <Row className="card-row">
-                <Col lg={5} className="card-container">
-                  <a href="https://github.com/Tim-Nyman/PortfolioWebsite" target="_blank" className="card-design">
-                    <Image src="Images/Cards/PortfolioWebsitePicture.png" className="card-design-image" fluid></Image>
+                <Col lg={4} className="card-container">
+                  <a href="https://github.com/Tim-Nyman/" target="_blank" className="card-design">
+                    <Image src="Images/Logos/aspnet.svg" className="image-tranform" fluid></Image>
                   </a>
                   <h1 className="text-design-card-h1 resize-text pt-lg-5">
-                    Portfolio
+                    WebAPI ASP.NET
                   </h1>
                   <p className="card-text text-design remove-text">
-                    This website is built using TypeScript, React and Bootstrap as a learning opportunity.
+                    In progress:
+                    Building a CRM system using ASP.NET
                   </p>
                 </Col>
 
-                <Col lg={5} className="card-container">
+                <Col lg={4} className="card-container">
+                  <a href="https://github.com/Tim-Nyman/PortfolioWebsite" target="_blank" className="card-design">
+                    <Image src="Images/Logos/React-icon.svg" className="image-tranform" fluid></Image>
+                  </a>
+                  <h1 className="text-design-card-h1 resize-text pt-lg-5">
+                    Portfolio Website
+                  </h1>
+                  <p className="card-text text-design remove-text">
+                    Built this website using TypeScript, React and Bootstrap as a learning opportunity.
+                  </p>
+                </Col>
+
+                <Col lg={4} className="card-container">
                   <a href="https://github.com/Tim-Nyman/OOAD-Project" target="_blank" className="card-design">
-                    <Image src="Images/Logos/solid-logotype.png" className="card-design-image" fluid></Image>
+                    <Image src="Images/Cards/solid-logotype.png" className="card-design-image" fluid></Image>
                   </a>
                   <h1 className="text-design-card-h1 resize-text pt-lg-5">
                     OOAD App
                   </h1>
                   <p className="card-text text-design remove-text">
-                    Console application where the focus was on OOAD and following design patterns.
+                    School project: Console application where the focus is on OOAD and following design patterns.
                   </p>
                 </Col>
+
               </Row>
 
               <Row>

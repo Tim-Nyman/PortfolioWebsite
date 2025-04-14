@@ -50,7 +50,7 @@
 
 .card-row {
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .card-design {
@@ -85,17 +85,17 @@
     }
 
     .card-container {
-        width: 50% !important;
+        width: 50% !important;        
     }
 
     .resize-text {
         font-size: 16px !important;
     }
 
-    /* .remove-text {
+    .remove-text {
         display: none;
-    } */
-}
+    }
+} 
 
 /* Logos & bar*/
 .image-size {
