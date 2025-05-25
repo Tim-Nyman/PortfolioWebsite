@@ -80,14 +80,25 @@ function Example() {
 
               <Row className="card-row">
                 <Col lg={4} className="card-container">
+                  <a href="https://github.com/ASP2G4/InvoiceService" target="_blank" className="card-design">
+                    <Image src="Images/Logos/aspnet.svg" className="image-tranform" fluid></Image>
+                  </a>
+                  <h1 className="text-design-card-h1 resize-text pt-lg-5">
+                    ASP.NET Microservices
+                  </h1>
+                  <p className="card-text text-design remove-text">
+                    Working in a team of 5 putting together a event booking application.
+                  </p>
+                </Col>
+
+                <Col lg={4} className="card-container">
                   <a href="https://github.com/Tim-Nyman/Alpha-Backend" target="_blank" className="card-design">
                     <Image src="Images/Logos/aspnet.svg" className="image-tranform" fluid></Image>
                   </a>
                   <h1 className="text-design-card-h1 resize-text pt-lg-5">
                   ASP.NET WebAPI
                   </h1>
-                  <p className="card-text text-design remove-text">
-                    In progress:
+                  <p className="card-text text-design remove-text">                    
                     One part of a CRM system using ASP.NET
                   </p>
                 </Col>
@@ -103,19 +114,6 @@ function Example() {
                     Built this website using TypeScript, React and Bootstrap as a learning opportunity.
                   </p>
                 </Col>
-
-                <Col lg={4} className="card-container">
-                  <a href="https://github.com/ASP2G4/InvoiceService" target="_blank" className="card-design">
-                    <Image src="Images/Logos/aspnet.svg" className="image-tranform" fluid></Image>
-                  </a>
-                  <h1 className="text-design-card-h1 resize-text pt-lg-5">
-                    ASP.NET Microservices
-                  </h1>
-                  <p className="card-text text-design remove-text">
-                    Working in a team of 5 putting together a event booking application.
-                  </p>
-                </Col>
-
               </Row>
 
               <Row>
