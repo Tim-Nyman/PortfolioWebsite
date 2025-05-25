@@ -80,15 +80,15 @@ function Example() {
 
               <Row className="card-row">
                 <Col lg={4} className="card-container">
-                  <a href="https://github.com/Tim-Nyman/" target="_blank" className="card-design">
+                  <a href="https://github.com/Tim-Nyman/Alpha-Backend" target="_blank" className="card-design">
                     <Image src="Images/Logos/aspnet.svg" className="image-tranform" fluid></Image>
                   </a>
                   <h1 className="text-design-card-h1 resize-text pt-lg-5">
-                    WebAPI ASP.NET
+                  ASP.NET WebAPI
                   </h1>
                   <p className="card-text text-design remove-text">
                     In progress:
-                    Building a CRM system using ASP.NET
+                    One part of a CRM system using ASP.NET
                   </p>
                 </Col>
 
@@ -105,14 +105,14 @@ function Example() {
                 </Col>
 
                 <Col lg={4} className="card-container">
-                  <a href="https://github.com/Tim-Nyman/OOAD-Project" target="_blank" className="card-design">
-                    <Image src="Images/Cards/solid-logotype.png" className="card-design-image" fluid></Image>
+                  <a href="https://github.com/ASP2G4/InvoiceService" target="_blank" className="card-design">
+                    <Image src="Images/Logos/aspnet.svg" className="card-design-image" fluid></Image>
                   </a>
                   <h1 className="text-design-card-h1 resize-text pt-lg-5">
-                    OOAD App
+                    ASP.NET Microservices
                   </h1>
                   <p className="card-text text-design remove-text">
-                    School project: Console application where the focus is on OOAD and following design patterns.
+                    Working in a team of 5 putting together a event booking application.
                   </p>
                 </Col>
 
