@@ -106,7 +106,7 @@ function Example() {
 
                 <Col lg={4} className="card-container">
                   <a href="https://github.com/ASP2G4/InvoiceService" target="_blank" className="card-design">
-                    <Image src="Images/Logos/aspnet.svg" className="card-design-image" fluid></Image>
+                    <Image src="Images/Logos/aspnet.svg" className="image-tranform" fluid></Image>
                   </a>
                   <h1 className="text-design-card-h1 resize-text pt-lg-5">
                     ASP.NET Microservices
